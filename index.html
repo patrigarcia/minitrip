@@ -1,20 +1,285 @@
+<!----------MINITRIP BY PATRICIA GONZALEZ------------------>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<link rel="icon" type="image.png" href="favicon.png" sizes="64x64">
+<link rel="stylesheet" type="text/css" href="minitrip.css">
 
 <head>
-    <title>Slider</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./slider.css">
+    <title>Minitrip | Mini escapadas Tiny</title>
 </head>
+<!----------------------HEADER------------------------->
 
 <body>
-    <main>
-        <div class="image1"></div>
-        <div class="image2"></div>
-        <div class="image3"></div>
-    </main>
+    <header>
+        <img src="image/logo.svg" alt="">
+        <ul class="barra">
+            <li><h4><a href="#">Contactanos</a></h4>
+            </li>
+            <li><h4><a href="#">Ofertas</a></h4>
+            </li>
+            <li><h4><a href="#">Inicio</a></h4>
+            </li>
+        </ul>
+    </header>
+    <!-----------------------SLIDER------------------------->
+    <nav class="fondo">
+        <div class="slider-contenedor">
+            <div class="menu">
+                <h1>Que tu próxima escapada sea en una...</h1><br />
+                <h2>Minicasa!</h2>
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide slide-1"></div>
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide slide-2"></div>
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide slide-3"></div>
+        </div>
+    </nav>
+    <!---------------FORMULARIOS DE BÚSQUEDA----------------------->
+    <div class="row">
+        <div class="ciudad">
+            <label for="city">Quiero una escapada en:</label>
+        </div>
+        <div class="lugar">
+            <select id="city" name="city">
+                <option value="Barcelona">Barcelona</option>
+                <option value="Girona">Girona</option>
+                <option value="Tarragona">Tarragona</option>
+            </select>
+        </div>
+        <div class="entrada">
+            <label for="checkin">Fecha de entrada:</label>
+        </div>
+        <div class="fecha">
+            <select id="day1" name="day1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="12">22</option>
+                <option value="13">23</option>
+                <option value="14">24</option>
+                <option value="15">25</option>
+                <option value="16">26</option>
+                <option value="17">27</option>
+                <option value="18">28</option>
+                <option value="19">29</option>
+                <option value="20">30</option>
+                <option value="21">31</option>
+            </select>
+        </div>
+        <div class="lugar">
+            <select id="city" name="city">
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+        </div>
+        <div class="salida">
+            <label for="checkout">Fecha de Salida:</label>
+        </div>
+        <div class="fecha2">
+            <select id="day2" name="day2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="12">22</option>
+                <option value="13">23</option>
+                <option value="14">24</option>
+                <option value="15">25</option>
+                <option value="16">26</option>
+                <option value="17">27</option>
+                <option value="18">28</option>
+                <option value="19">29</option>
+                <option value="20">30</option>
+                <option value="21">31</option>
+            </select>
+        </div>
+        <div class="lugar">
+            <select id="city" name="city">
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+        </div>
+        <a class="button" href="#">Buscar</a>
+    </div>
+    <!------------------TEXTO COMPLEMENTARIO--------------------->
+    <div class="txt">
+        <h1>No esperes a las vacaciones! Aprovecha estas súper mini-escapadas!</h1>
+    </div>
+    <!---------------------------CAJAS--------------------------->
+    <section>
+        <div class="caja">
+            <img src="casas/inside1.jpg" />
+            <img class="top" src="casas/tiny1.jpg"/>
+       </div>
+            <article>
+                <img class="icono" src="image/montaña.png">
+                <img class="icon" src="image/desayuno.png">
+                <img class="iconomar" src="image/vino.png">
+                <h4>Relájate en una minicasa en el Montseny de Barcelona<br />
+                para dos personas con copa de bienvenida!<strong>60€</strong></h4>
+                <h6>La noche para dos personas</h6>
+            </article>
+    </section>
+    <section>
+        <div class="caja">
+            <img src="casas/inside2.jpg" />
+            <img class="top" src="casas/tiny2.jpg" />
+       </div>
+            <article>
+                <img class="iconobosque" src="image/campo.png">
+                <img class="icon" src="image/desayuno.png">
+                <h4>Disfruta aires de campo en una minicasa en Olot<br />
+                para dos personas con desayuno incluído!<strong>45€</strong></h4>
+                <h6>La noche para dos personas</h6>
+            </article>
+    </section>
+    <section>
+        <div class="caja">
+            <img src="casas/inside3.png" />
+            <img class="top" src="casas/tiny3.jpg" />
+       </div>
+            <article>
+                <img class="icono" src="image/montaña.png">
+                <img class="icon" src="image/desayuno.png">
+                <img class="iconomar" src="image/vino.png">
+                <h4>Escápate a una minicasa suspendida en Tavertet<br />
+                con vistas preciosas y copa de vino!<strong>80€</strong></h4>
+                <h6>La noche para dos personas</h6>
+            </article>
+    </section>
+    <section>
+        <div class="caja">
+            <img src="casas/inside4.jpg" />
+            <img class="top" src="casas/tiny4.jpg" />
+       </div>
+            <article>
+                <img class="iconobosque" src="image/bosque.png">
+                <img class="icon" src="image/desayuno.png">
+                <h4>Disfruta con amigos esta minicasa en Castelldefels<br />
+                con capacidad para 4 y desayuno incluído!<strong>55€</strong></h4>
+                <h6>La noche para dos personas</h6>
+            </article>
+    </section>
+    <section>
+        <div class="caja">
+            <img src="casas/inside5.jpg" />
+            <img class="top" src="casas/tiny5.jpg" />
+       </div>
+            <article>
+                <img class="iconobosque" src="image/bosque.png">
+                <img class="icon" src="image/desayuno.png">
+                <img class="iconomar" src="image/vino.png">
+                <h4>Descubre la magia de los Pirineos Catalanes en una<br />
+                 minicasa en el bosque con desayuno y copa de vino!<strong>64€</strong></h4>
+                <h6>La noche para dos personas</h6>
+            </article>
+    </section>
+    <section>
+        <div class="caja">
+            <img src="casas/inside6.jpg" />
+            <img class="top" src="casas/tiny6.jpg" />
+       </div>
+            <article>
+                <img class="iconomar" src="image/mar.png">
+                <img class="icon" src="image/desayuno.png">
+                <h4>Relájate en una minicasa en Tarragona cerca del mar<br />
+                para dos personas con copa de vino y desayuno!<strong>39€</strong></h4>
+                <h6>La noche para dos personas</h6>
+            </article>
+    </section>
+    <!-------------------------FOOTER--------------------------->
+    <footer>
+        
+        <div class="store">
+            <img class="app" src="image/appstore.png">
+            <img class="play" src="image/playstore.png">
+        </div>
+        <div class="pie">
+        <div class="contacto">
+            <ul>
+                <li><a href="#">Podemos ayudarte?</a></li>
+                <li><a href="#">Preguntas - Respuestas</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+            </ul>
+        <div class="call"> Llámanos:<br />
+            (+34) 900 900 900  &nbsp;(+34) 900 900 900
+        </div>
+        </div>
+        <div class="pay">
+            <p>Medios de Pago:</p>
+            <img class="pago" src="image/pagos.png">
+        </div>
+        <div class="redes">
+            <p>Síguenos en las redes!</p>
+            <img class="iconored" src="image/face.png">
+            <img class="iconored" src="image/insta.png">
+            <img class="iconored" src="image/tw.png">
+            <img class="iconored" src="image/trip.png">
+            <p>Quiéres recibir descuentos increíbles? &nbsp;<a href="#">Suscríbete al Newsletter!</a></p>
+        </div>
+    </div>
+            <h4>&copy 2018 by Minitrip. Todos los derechos reservados.</h4>
+    </footer>
 </body>
 
 </html>
