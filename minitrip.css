@@ -2,8 +2,7 @@
 
 * {
     margin: auto;
-    padding: auto;
-    font-family: futura, helvetica, sans serif;
+    font-family: 'Abel', sans-serif;
 }
 
 /* --------------HEADER----------------- */
@@ -17,9 +16,9 @@ header {
     background: -ms-linear-gradient(left, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
     background: linear-gradient(to right, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
     background-position: 20%;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
-    height: 80px;
 }
 
 p.barra {
@@ -31,15 +30,15 @@ p.barra {
 }
 
 .barra li a {
-    text-align: center;
-    font-family: Futura pt;
-    font-size: 25px;
-    text-decoration: none;
-    float: right;
-    padding: 10px;
     color: #fff;
+    float: right;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    padding: 10px;
     padding-right: 60px;
     padding-top: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .barra li a:hover {
@@ -48,9 +47,8 @@ p.barra {
 
 header img {
     float: left;
+    margin: 10px 0px 10px 300px;
     width: 200px;
-    padding-left: 300px;
-    padding-top: 7px;
 }
 
 
@@ -58,11 +56,11 @@ header img {
 
 html,
 body {
-    width: 100%;
+    font-family: 'Abel', sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Helvetica", sans-serif;
+    width: 100%;
 }
 
 img {
@@ -71,51 +69,47 @@ img {
 
 .slider-contenedor {
     height: 100%;
-    width: 100%;
-    position: relative;
     overflow: hidden;
+    position: relative;
     text-align: center;
+    width: 100%;
 }
 
 .menu {
-    position: absolute;
-    left: 0;
-    z-index: 900;
-    width: 100%;
     bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 900;
 }
 
 .menu label {
-    cursor: pointer;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
     background: #fff;
     border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
     margin: 0 .2em 1em;
-
-    &:hover {
-        background: red;
-    }
+    width: 16px;
 }
 
 .slide {
-    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
     height: 100%;
+    left: 100%;
+    padding: 8em 1em 0;
     position: absolute;
     top: 0;
-    left: 100%;
-    z-index: 10;
-    padding: 8em 1em 0;
-    background-size: cover;
-    background-position: 50% 50%;
     transition: left 0s .75s;
+    width: 100%;
+    z-index: 10;
 }
 
 [id^="slide"]:checked+.slide {
     left: 0;
-    z-index: 100;
     transition: left .65s ease-out;
+    z-index: 100;
 }
 
 .slide-1 {
@@ -135,33 +129,27 @@ img {
 }
 
 .menu h1 {
-    color: white;
-    font-family: futura pt, sans-serif;
+    color: #EDEBEC;
+    font-family: 'Nunito', sans-serif;
     font-size: 4em;
-    text-align: center;
     margin-bottom: 10px;
     padding-bottom: 100px;
+    text-align: center;
     text-shadow: 3px 3px 2px black;
 }
 
 .menu h2 {
-    color: white;
-    font-size: 4em;
-    text-align: center;
+    color: #EDEBEC;
+    font-family: 'Satisfy', cursive;
+    font-size: 5em;
     margin-bottom: 150px;
+    text-align: center;
     text-shadow: 3px 3px 2px black;
 }
 
 /*---------------FORMULARIOS DE BÚSQUEDA--------------------*/
 
 .row {
-    float: left;
-    width: 100%;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 35px;
-    margin-bottom: 40px;
-    display: inline-block;
     background: rgba(28, 3, 66, 1);
     background: -moz-linear-gradient(left, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(28, 3, 66, 1)), color-stop(45%, rgba(204, 0, 255, 1)), color-stop(66%, rgba(255, 0, 174, 1)), color-stop(94%, rgba(254, 182, 69, 1)), color-stop(100%, rgba(254, 182, 69, 1)));
@@ -169,6 +157,12 @@ img {
     background: -o-linear-gradient(left, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
     background: -ms-linear-gradient(left, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
     background: linear-gradient(to right, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
+    display: inline-block;
+    margin-bottom: 40px;
+    padding-bottom: 35px;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
 
 }
 
@@ -176,8 +170,8 @@ img {
     color: white;
     display: inline;
     font-size: 1.2em;
-    padding-top: 30px;
     padding-bottom: 30px;
+    padding-top: 30px;
 
 }
 
@@ -186,8 +180,8 @@ img {
     display: inline;
     font-size: 1.2em;
     margin-left: 30px;
-    padding-top: 30px;
     padding-bottom: 30px;
+    padding-top: 30px;
 
 }
 
@@ -196,68 +190,68 @@ img {
     display: inline;
     font-size: 1.2em;
     margin-left: 30px;
-    padding-top: 30px;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
-.lugar,
 .fecha,
-.fecha2 {
+.fecha2,
+.lugar {
     color: white;
     display: inline;
     margin: 0px 10px 20px 2px;
-    padding-top: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #city,
 #day1,
 #day2 {
-    font-family: futura, sans-serif;
-    margin-top: 20px;
+    font-family: 'Abel', sans-serif;
     font-size: 1.1em;
+    margin-top: 20px;
 }
 
 
 .button {
-    border: 1px solid #d7dada;
-    -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;
-    font-size: 1.1em;
-    font-family: futura, sans-serif;
-    padding: 8px 10px 8px 10px;
-    margin-left: 80px;
-    text-decoration: none;
-    display: inline-block;
-    color: #000000;
+    -webkit-border-radius: 4px;
     background-color: #f4f5f5;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f5f5), to(#dfdddd));
-    background-image: -webkit-linear-gradient(top, #f4f5f5, #dfdddd);
     background-image: -moz-linear-gradient(top, #f4f5f5, #dfdddd);
     background-image: -ms-linear-gradient(top, #f4f5f5, #dfdddd);
     background-image: -o-linear-gradient(top, #f4f5f5, #dfdddd);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f5f5), to(#dfdddd));
+    background-image: -webkit-linear-gradient(top, #f4f5f5, #dfdddd);
     background-image: linear-gradient(to bottom, #f4f5f5, #dfdddd);
+    border-radius: 4px;
+    border: 1px solid #d7dada;
+    color: #000000;
+    display: inline-block;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.1em;
+    margin-left: 80px;
+    padding: 8px 20px 8px 20px;
+    text-decoration: none;
 }
 
 .button:hover {
-    border: 1px solid #bfc4c4;
     background-color: #d9dddd;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9dddd), to(#c6c3c3));
-    background-image: -webkit-linear-gradient(top, #d9dddd, #c6c3c3);
     background-image: -moz-linear-gradient(top, #d9dddd, #c6c3c3);
     background-image: -ms-linear-gradient(top, #d9dddd, #c6c3c3);
     background-image: -o-linear-gradient(top, #d9dddd, #c6c3c3);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d9dddd), to(#c6c3c3));
+    background-image: -webkit-linear-gradient(top, #d9dddd, #c6c3c3);
     background-image: linear-gradient(to bottom, #d9dddd, #c6c3c3);
+    border: 1px solid #bfc4c4;
 }
 
 /*----------------TEXTO COMPLEMENTARIO---------------*/
 
 .txt h1 {
-    font-family: futura pt, helvetica, sans-serif;
-    text-align: center;
-    padding-bottom: 40px;
+    font-family: 'Abel', cursive;
     font-weight: normal;
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 /*-----------------------CAJAS-----------------------*/
@@ -266,71 +260,80 @@ section {
     background: #E7E7E7;
     float: left;
     height: 550px;
-    width: 600px;
     margin-bottom: 100px;
-    margin-left: 240px;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 600px;
+    -webkit-box-shadow: 10px 10px 22px -2px rgba(199,195,199,1);
+    -moz-box-shadow: 10px 10px 22px -2px rgba(199,195,199,1);
+    box-shadow: 10px 10px 22px -2px rgba(199,195,199,1);
+}
+
+section a {
+    color: black;
+    text-decoration: none;
 }
 
 section:hover {
-    -webkit-box-shadow: 10px 10px 25px -1px rgba(173, 168, 173, 1);
-    -moz-box-shadow: 10px 10px 25px -1px rgba(173, 168, 173, 1);
-    box-shadow: 10px 10px 25px -1px rgba(173, 168, 173, 1);
+    -webkit-box-shadow: 10px 10px 22px -2px rgba(64,63,64,1);
     cursor: pointer;
+    -moz-box-shadow: 10px 10px 22px -2px rgba(64,63,64,1);
+    box-shadow: 10px 10px 22px -2px rgba(64,63,64,1);
 }
 
 #oferta {
-    width: 600px;
     height: 300px;
+    width: 600px;
 }
 
 
 article {
-    font-family: futura pt, Helvetica, sans-serif;
+    background-color: #E7E7E7;
+    font-family: 'Abel', sans-serif;
     font-size: 1.2em;
     height: 140px;
-    background-color: #E7E7E7;
     margin-top: 400px;
 }
 
 article h4 {
-    height: 45px;
-    font-family: futura pt, Helvetica, sans-serif;
-    font-size: 1.1em;
-    padding: 0px 0px 0px 20px;
     display: flex;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.1em;
     font-weight: normal;
+    height: 45px;
+    padding: 5px 0px 0px 20px;
 }
 
 article h6 {
     float: right;
-    font-family: futura pt, helvetica, sans-serif;
+    font-family: 'Abel', sans-serif;
     font-weight: normal;
-    padding-right: 20px;
     margin: 5px 0px 10px 0px;
+    padding-right: 20px;
 }
 
 .icono {
-    width: 165px;
     height: 50px;
     padding: 10px 20px 0px 20px;
+    width: 165px;
 }
 
 .icon {
-    width: 120px;
     height: 50px;
     padding: 10px 20px 0px 20px;
+    width: 120px;
 }
 
 .iconomar {
-    width: 130px;
     height: 50px;
     padding: 10px 20px 0px 20px;
+    width: 130px;
 }
 
 .iconobosque {
-    width: 150px;
     height: 50px;
     padding: 10px 20px 0px 20px;
+    width: 150px;
 }
 
 strong {
@@ -340,46 +343,55 @@ strong {
 }
 
 .caja {
-    position: relative;
-    height: 350px;
-    width: 600px;
     float: left;
+    height: 350px;
+    position: relative;
+    width: 600px;
 }
 
 .caja img {
-    position: absolute;
     left: 0;
+    position: absolute;
     transition: opacity 1.5s ease-in-out;
 }
 
-.caja img.top:hover {
+.caja .top:hover {
     opacity: 0;
 }
 
 /* --------------------FOOTER----------------------- */
 
 .store {
-    margin-left: 700px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     padding-bottom: 20px;
 }
 
 .play {
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+.app {
+    margin-left: 0px;
+    margin-right: 20px;
 }
 
 .play:hover {
-    -webkit-box-shadow: 0px 0px 26px 3px rgba(209,207,209,1);
-    -moz-box-shadow: 0px 0px 26px 3px rgba(209,207,209,1);
-    box-shadow: 0px 0px 26px 3px rgba(209,207,209,1);
+    -moz-box-shadow: 0px 0px 26px 3px rgba(209, 207, 209, 1);
+    -webkit-box-shadow: 0px 0px 26px 3px rgba(209, 207, 209, 1);
+    box-shadow: 0px 0px 26px 3px rgba(209, 207, 209, 1);
     cursor: pointer;
 }
 
 .app:hover {
-    -webkit-box-shadow: 0px 0px 26px 3px rgba(209,207,209,1);
-    -moz-box-shadow: 0px 0px 26px 3px rgba(209,207,209,1);
-    box-shadow: 0px 0px 26px 3px rgba(209,207,209,1);
+    -moz-box-shadow: 0px 0px 26px 3px rgba(209, 207, 209, 1);
+    -webkit-box-shadow: 0px 0px 26px 3px rgba(209, 207, 209, 1);
+    box-shadow: 0px 0px 26px 3px rgba(209, 207, 209, 1);
     cursor: pointer;
 }
+
 footer {
     background: rgba(28, 3, 66, 1);
     background: -moz-linear-gradient(left, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
@@ -388,27 +400,27 @@ footer {
     background: -o-linear-gradient(left, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
     background: -ms-linear-gradient(left, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
     background: linear-gradient(to right, rgba(28, 3, 66, 1) 0%, rgba(204, 0, 255, 1) 45%, rgba(255, 0, 174, 1) 66%, rgba(254, 182, 69, 1) 94%, rgba(254, 182, 69, 1) 100%);
-    padding-top: 25px;
     clear: both;
     height: auto;
     padding-bottom: 20px;
+    padding-top: 25px;
 }
 
 footer h4 {
-    font-family: futura pt, sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 20px;
     border-top: 2px dotted #9C999B;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    padding-top: 20px;
+    text-align: center;
 }
 
 .contacto ul a {
-    font-family: futura, helvetica, sans-serif;
-    text-decoration: none;
+    color: white;
+    font-family: 'Abel', sans-serif;
     font-size: 1.1em;
     font-weight: normal;
     line-height: 1.5;
-    color: white;
+    text-decoration: none;
 }
 
 .contacto ul a:hover {
@@ -416,57 +428,64 @@ footer h4 {
 }
 
 .call {
-    text-align: center;
-    padding-top: 20px;
+    color: white;
     font-size: 1.3em;
     font-weight: normal;
     line-height: 1.5;
-    color: white;
+    padding-top: 20px;
+    text-align: center;
 }
 
 .contacto {
+    border-right: 2px dotted #9C999B;
     float: left;
     padding-left: 10%;
-    border-right: 2px dotted #9C999B;
-    padding-right: 5%;
+    padding-right: 8%;
 }
 
 
 
 .pay {
-    font-size: 1.1em;
-    text-align: center;
-    height: 155px;
+    border-right: 2px dotted #9C999B;
     float: left;
-    padding-top: 10px;
+    font-size: 1.1em;
+    height: 155px;
     padding-left: 6%;
     padding-right: 6%;
-    border-right: 2px dotted #9C999B;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .pay .pago {
-    width: 300px;
     height: 100px;
+    width: 300px;
 }
 
 .redes {
-    font-size: 1.1em;
-    text-align: center;
     float: left;
+    font-size: 1.1em;
+    padding-left: 6%;
     padding-top: 2px;
-    padding-left: 4%;
+    text-align: center;
 }
 
 .pie {
     color: white;
-    width: 100%;
     height: 200px;
+    width: 100%;
 }
 
 .iconored {
-    width: 50px;
     height: 50px;
-    padding: 20px;
+    margin: 20px;
+    width: 50px;
+}
+
+.iconored:hover {
+    -moz-box-shadow: 0px 0px 26px 3px rgba(209, 207, 209, 1);
+    -webkit-box-shadow: 0px 0px 26px 3px rgba(209, 207, 209, 1);
+    box-shadow: 0px 0px 26px 3px rgba(209, 207, 209, 1);
+    cursor: pointer;
 }
 
 .redes a {
@@ -474,21 +493,181 @@ footer h4 {
 }
 
 .redes a:hover {
-    text-decoration: none;
     color: #E71D73;
+    text-decoration: none;
 }
 
+/*-------------------------2DA PÁGINA OFERTA---------------------------*/
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
 
+.slider-contenedor1 {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
 
+.menuof {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 900;
+}
 
+.menuof label {
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    margin: 0 .2em 1em;
+    width: 16px;
+}
 
+.slide {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100%;
+    left: 100%;
+    padding: 8em 1em 0;
+    position: absolute;
+    top: 0;
+    transition: left 0s .75s;
+    width: 100%;
+    z-index: 10;
+}
 
+.slide-11 {
+    background-image: url("casas/tiny1.jpg");
+}
 
+.slide-22 {
+    background-image: url("casas/inside7.jpg");
+}
 
+.slide-33 {
+    background-image: url("casas/inside8.jpg");
+}
 
+.slide-44 {
+    background-image: url("casas/inside9.jpg");
+}
 
+.oferta {
+    height: 700px;
+}
 
+.menuof h1 {
+    color: white;
+    font-family: 'Satisfy', sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 550px;
+    margin-left: 4%;
+    text-align: left;
+    text-shadow: 3px 3px 2px black;
+}
 
+/*---------------TEXTO COMPLEMENTARIO OFERTA-----------------*/
 
+.texto {
+    background-color: #E7E7E7;
+    width: 100%;
+}
 
+.texto h1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.iconos {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.icono1 {
+    height: 130px;
+    margin: 10px 50px 10px 30px;
+    width: 140px;
+}
+
+.icono2 {
+    height: 130px;
+    margin: 10px 30px 10px 30px;
+    width: 105px;
+}
+
+.icono3 {
+    height: 130px;
+    margin: 10px 30px 10px 30px;
+    width: 210px;
+}
+
+hr {
+    margin: 50px 350px 50px 350px;
+}
+
+h5 {
+    color: #737171;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 10px 150px 10px 150px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+iframe {
+    padding-bottom: 30px;
+    padding-top: 50px;
+    width: 100%
+}
+
+.res {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonr {
+
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #F9B233;
+    background-image: -moz-linear-gradient(top, #F9B233, #E71D73);
+    background-image: -ms-linear-gradient(top, #F9B233, #E71D73);
+    background-image: -o-linear-gradient(top, #F9B233, #E71D73);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F9B233), to(#E71D73));
+    background-image: -webkit-linear-gradient(top, #F9B233, #E71D73);
+    background-image: linear-gradient(to bottom, #F9B233, #E71D73);
+    border-radius: 4px;
+    border: 1px solid #d7dada;
+    color: white;
+    display: inline-block;
+    font-family: 'Satisfy', sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 8px 20px 8px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.buttonr:hover {
+    background-color: #E71D73;
+    background-image: -moz-linear-gradient(top, #E71D73, #F9B233);
+    background-image: -ms-linear-gradient(top, #E71D73, #F9B233);
+    background-image: -o-linear-gradient(top, #E71D73, #F9B233);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#E71D73), to(#F9B233));
+    background-image: -webkit-linear-gradient(top, #E71D73, #F9B233);
+    background-image: linear-gradient(to bottom, #E71D73, #F9B233);
+    border: 1px solid #F9B233;
+}
